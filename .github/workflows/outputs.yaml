@@ -1,4 +1,4 @@
-# Data can be shared between `job`s and `step`s.
+## Data can be shared between `job`s and `step`s.
 
 name: outputs
 on:
