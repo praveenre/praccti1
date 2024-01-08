@@ -16,6 +16,7 @@ jobs:
         run: |
           echo '::set-output name=FAV_NUMBER::3'
           echo '::set-output name=FAV_COLOR::blue'
+          echo 'Macha mia mangalvaram'
         # ::end-span
         # Steps that create outputs must have unique ids.
         id: abc
@@ -25,6 +26,7 @@ jobs:
         run: |
           echo "${{steps.abc.outputs.FAV_NUMBER}}"
           echo "${{steps.abc.outputs.FAV_COLOR}}"
+          echo "Yehi hai right choice baby"
     # ::span-comment
     # Create outputs for a job which will be available to other jobs that `needs` it (see [Job Ordering](job-ordering.html)).
     # You can include output from `step`s that ran for the job.
@@ -32,6 +34,7 @@ jobs:
       fav-animal: tiger
       fav-number: ${{steps.abc.outputs.FAV_NUMBER}}
     # ::end-span
+    
 
   job2:
     runs-on: ubuntu-latest
