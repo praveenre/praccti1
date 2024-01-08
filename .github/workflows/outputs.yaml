@@ -40,6 +40,6 @@ jobs:
       # ::span-comment
       # Use context expressions to grab outputs from a job included in `needs` (see [Job Ordering](job-ordering.html))
       - run: |
-        echo "${{needs.job1.outputs.fav-animal}}"
-        echo "${{needs.job1.outputs.fav-number}}"
+          echo "${{needs.job1.outputs.fav-animal}}"
+          echo "${{needs.job1.outputs.fav-number}}"
       # ::end-span
