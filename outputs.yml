@@ -45,4 +45,5 @@ jobs:
       - run: |
         echo "${{needs.job1.outputs.fav-animal}}"
         echo "${{needs.job1.outputs.fav-number}}"
+        echo "hello here"
       # ::end-span
